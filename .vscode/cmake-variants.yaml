@@ -1,0 +1,15 @@
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: Emit debug information
+      buildType: Debug
+      settings:
+        CMAKE_TOOLCHAIN_FILE: toolchains/c906-v223.toolchain.cmake
+    release:
+      short: Release
+      long: Optimize generated code
+      buildType: Release
+      settings:
+        CMAKE_TOOLCHAIN_FILE: toolchains/c906-v223.toolchain.cmake
